@@ -39,8 +39,8 @@ section {
     right: 0;
     z-index: 99;
     border-bottom: var(--border);
+    background-color: var(--bg);
     outline: 2px dotted white;
-
 }
 
 .header section {
@@ -124,4 +124,36 @@ section {
     font-weight: 200;
     line-height: 1.6;
     outline: 2px dotted white;
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    outline: 2px dotted white;
+}
+
+.title span {
+    color: var(--white);
+    text-transform: uppercase;
+    outline: 2px dotted white;
+}
+
+.container-image img {
+    height: 500px;
+    width: 500px;
+    outline: 2px dotted white;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 2rem;
+    outline: 2px dotted white;
+}
+
+.about .row .content {
+    
 }
