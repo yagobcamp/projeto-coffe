@@ -5,6 +5,7 @@
     --black: #13131a;
     --bg: #0e0e1c;
     --white: #ffff;
+    --box: #878769;
     --border: 0.1rem solid rgba(255,255,255,0.3);
     font-size: 12px;
 }
@@ -88,6 +89,10 @@ section {
     outline: 2px dotted white;
 }
 
+btn:hover {
+    letter-spacing: 0,5rem;
+}
+
 .home-container {
   background-image: url("imagens/projetocoffe.png");
   background-position: center;
@@ -155,5 +160,58 @@ section {
 }
 
 .about .row .content {
-    
+    padding: 3rem;
+}
+
+.about .row .content h3 {
+    font-size: 3.2rem;
+    color: var(--white);
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: var(--white);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: var(--white);
+    font-size: 1.9rem;
+}
+
+.menu .box-container .box .price span {
+    font-size: 2rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+    background-color: var(--box);
+}
+
+.menu .box-container .box:hover>*{
+    color: var(--black);
 }
