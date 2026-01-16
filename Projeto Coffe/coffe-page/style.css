@@ -161,11 +161,13 @@ btn:hover {
 
 .about .row .content {
     padding: 3rem;
+    outline: 2px dotted white;
 }
 
 .about .row .content h3 {
     font-size: 3.2rem;
     color: var(--white);
+    outline: 2px dotted white;
 }
 
 .about .row .content p {
@@ -173,39 +175,46 @@ btn:hover {
     color: var(--white);
     padding: 1rem 0;
     line-height: 2;
+    outline: 2px dotted white;
 }
 
-.menu .box-container {
+.box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
+    outline: 2px dotted white;
 }
 
 .menu .box-container .box {
     text-align: center;
     border: var(--border);
     padding: 5rem;
+    outline: 2px dotted white;
 }
 
 .menu .box-container .box img {
     height: 10rem;
+    outline: 2px dotted white;
 }
 
 .menu .box-container .box h3 {
     color: var(--white);
     font-size: 2rem;
     padding: 1rem 0;
+    outline: 2px dotted white;
 }
 
 .menu .box-container .box .price {
     color: var(--white);
     font-size: 1.9rem;
+    outline: 2px dotted white;
 }
 
 .menu .box-container .box .price span {
     font-size: 2rem;
     text-decoration: line-through;
     font-weight: lighter;
+    outline: 2px dotted white;
 }
 
 .menu .box-container .box:hover {
@@ -215,3 +224,8 @@ btn:hover {
 .menu .box-container .box:hover>*{
     color: var(--black);
 }
+
+.review .box-container .box {
+    
+}
+
