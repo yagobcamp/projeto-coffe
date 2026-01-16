@@ -69,6 +69,7 @@ section {
 }
 
 .icons img {
+    color: var(--white);
     margin:1rem;
     cursor: pointer;
     outline: 2px dotted white;
@@ -89,7 +90,7 @@ section {
     outline: 2px dotted white;
 }
 
-btn:hover {
+.btn:hover {
     letter-spacing: 0,5rem;
 }
 
@@ -227,5 +228,13 @@ btn:hover {
 
 .review .box-container .box {
     
+}
+
+iframe {
+    
+    padding: 30px 20px 30px;
+    margin-left: 300px;
+    width: 500px;
+    height: 300px;
 }
 
