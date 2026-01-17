@@ -181,18 +181,9 @@ section {
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     outline: 2px dotted white;
-}
-
-.box img {
-    width: 225px;
-    height: 225px;
-}
-
-.box p {
-    text-align: center;
 }
 
 .menu .box-container .box {
@@ -235,7 +226,12 @@ section {
     color: var(--black);
 }
 
-.review .box-container .box {
+.review .box-container .box  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+    outline: 2px dotted white;
+
     border: var(--border);
     text-align: center;
     padding: 3rem 2rem;
@@ -257,8 +253,9 @@ section {
     outline: 2px dotted white;  
 }
 
-.review .box-container .box .stars {
-    background-color: #d3ad7f;
-    
+.stars img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
