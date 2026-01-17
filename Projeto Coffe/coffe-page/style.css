@@ -257,3 +257,8 @@ section {
     outline: 2px dotted white;  
 }
 
+.review .box-container .box .stars {
+    background-color: #d3ad7f;
+    
+}
+
