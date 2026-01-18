@@ -1,4 +1,4 @@
-@charset "Utf-8";
+@charset "UTF-8";
 
 :root {
     --main-color: #d3ad7f;
@@ -16,12 +16,14 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-align: left;
     transition: 0.1s linear;
     font-family: "Playfair Display", serif;
+    
 }
 
 body {
+    padding-top: 80px;
     background-color: var(--bg);
 }
 
@@ -29,6 +31,7 @@ section {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
+    width: 100%;
 }
 
 .header {
@@ -45,13 +48,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
 }
 
 .navbar a {
     margin: 0 1rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #ffff;
 }
 
@@ -84,7 +87,7 @@ section {
 }
 
 .btn:hover {
-    letter-spacing: 0,5rem;
+    letter-spacing: 0.5rem;
 }
 
 .home-container {
@@ -105,13 +108,17 @@ section {
     max-width: 60rem;
 }
 
+.content h2 {
+    color: var(--box);
+}
+
 .content h3 {
     color: var(--white);
     font-size: 5rem;
 }
 
 .content p {
-    background-color: var(--bg);
+    text-align: justify;
     color: var(--white);
     font-size: 1.8rem;
     font-weight: 200;
@@ -123,7 +130,7 @@ section {
     color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .title span {
@@ -174,7 +181,9 @@ section {
 }
 
 .menu .box-container .box img {
-    height: 10rem;
+    height: 200px;
+    width: 200px;
+    border-radius: 6px;
 }
 
 .menu .box-container .box h3 {
@@ -208,6 +217,13 @@ section {
     padding: 3rem 2rem;
 }
 
+.review .box-container .box h3 {
+    text-align: center;
+    color: var(--white);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
 .review .box-container .box p {
     font-size: 1.6rem;
     color: var(--white);
@@ -223,14 +239,115 @@ section {
 }
 
 iframe {
-    height: 450px;
-    width: 400px;
-    border-radius: 10px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
 }
 
 .address {
+    padding: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+/* =========================
+   CELULARES (até 599px)
+========================= */
+@media (max-width: 599px) {
+
+    /* HEADER */
+    @media (max-width: 599px) {
+
+    .header {
+        position: static;
+        width: 80%;
+    }
+
+    body {
+        padding-top: 0;
+    }
+
+    .header section {
+        flex-direction: column;
+        gap: 1rem;
+        width: 80%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+        padding: 0.8rem 0;
+    }
+
+    /* HOME */
+    .home-container section {
+        justify-content: center;
+        text-align: center;
+        width: 88%;
+    }
+
+    .container-image img {
+        width: 88%;
+        height: auto;
+    }
+
+    .btn:hover {
+    letter-spacing: 0.2;
+}
+
+    .content {
+        max-width: 88%;
+    }
+
+    .content h3 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    /* SOBRE */
+    .about .row {
+        flex-direction: column;
+    }
+
+    .container-image img {
+        width: 88%;
+        height: auto;
+    }
+
+    /* MENU */
+    .box-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu .box-container .box {
+        padding: 3rem;
+    }
+
+    div {
+        width: 80%;
+    }
+
+    /* AVALIAÇÕES */
+    .review .box-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* MAPA */
+    iframe {
+        height: 280px;
+        width: 85%;
+    }
