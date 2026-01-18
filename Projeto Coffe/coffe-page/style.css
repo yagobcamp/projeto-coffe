@@ -17,20 +17,18 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.2s linear;
+    transition: 0.1s linear;
     font-family: "Playfair Display", serif;
 }
 
 body {
     background-color: var(--bg);
-    outline: 2px dotted white;
 }
 
 section {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
-    outline: 2px dotted white;
 }
 
 .header {
@@ -41,7 +39,6 @@ section {
     z-index: 99;
     border-bottom: var(--border);
     background-color: var(--bg);
-    outline: 2px dotted white;
 }
 
 .header section {
@@ -50,14 +47,12 @@ section {
     justify-content: space-between;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    outline: 2px dotted white;
 }
 
 .navbar a {
     margin: 0 1rem;
     font-size: 1.4rem;
     color: #ffff;
-    outline: 2px dotted white;
 }
 
 .navbar a:hover {
@@ -65,20 +60,17 @@ section {
     border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.5rem;
     font-size: 1.6rem;
-    outline: 2px dotted white;
 }
 
 .icons img {
     color: var(--white);
     margin:1rem;
     cursor: pointer;
-    outline: 2px dotted white;
 }
 
 .icons img:hover {
     width: 40px;
     height: 40px;
-    outline: 2px dotted white;
 }
 
 .btn {
@@ -87,7 +79,8 @@ section {
     cursor: pointer;
     font-size: 1.7rem;
     margin-top: 1rem;
-    outline: 2px dotted white;
+
+    display: inline-block;
 }
 
 .btn:hover {
@@ -99,28 +92,22 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  outline: 2px dotted white;
-
-  width: 100vw;
-  height: 100vh;
 }
 
 .home-container section {
     display: flex;
     align-items: center;
+
     min-height: 100vh;
-    outline: 2px dotted white;
 }
 
 .content {
     max-width: 60rem;
-    outline: 2px dotted white;
 }
 
 .content h3 {
     color: var(--white);
     font-size: 5rem;
-    outline: 2px dotted white;
 }
 
 .content p {
@@ -129,7 +116,6 @@ section {
     font-size: 1.8rem;
     font-weight: 200;
     line-height: 1.6;
-    outline: 2px dotted white;
 }
 
 .title {
@@ -137,19 +123,17 @@ section {
     color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
-    outline: 2px dotted white;
+    margin-bottom: 2rem;
 }
 
 .title span {
     color: var(--white);
     text-transform: uppercase;
-    outline: 2px dotted white;
 }
 
 .container-image img {
     height: 650px;
     width: 650px;
-    outline: 2px dotted white;
 }
 
 .about .row {
@@ -157,65 +141,57 @@ section {
     align-items: center;
     background-color: var(--black);
     gap: 2rem;
-    outline: 2px dotted white;
+
 }
 
 .about .row .content {
     padding: 3rem;
-    outline: 2px dotted white;
 }
 
 .about .row .content h3 {
     font-size: 3.2rem;
     color: var(--white);
-    outline: 2px dotted white;
 }
 
 .about .row .content p {
     font-size: 1.6rem;
     color: var(--white);
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     line-height: 2;
-    outline: 2px dotted white;
 }
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
-    outline: 2px dotted white;
 }
 
 .menu .box-container .box {
     text-align: center;
     border: var(--border);
     padding: 5rem;
-    outline: 2px dotted white;
+    cursor: pointer;
 }
 
 .menu .box-container .box img {
     height: 10rem;
-    outline: 2px dotted white;
 }
 
 .menu .box-container .box h3 {
     color: var(--white);
     font-size: 2rem;
     padding: 1rem 0;
-    outline: 2px dotted white;
 }
 
 .menu .box-container .box .price {
     color: var(--white);
     font-size: 1.9rem;
-    outline: 2px dotted white;
 }
 
 .menu .box-container .box .price span {
     font-size: 2rem;
     text-decoration: line-through;
     font-weight: lighter;
-    outline: 2px dotted white;
 }
 
 .menu .box-container .box:hover {
@@ -226,36 +202,35 @@ section {
     color: var(--black);
 }
 
-.review .box-container .box  {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 2rem;
-    outline: 2px dotted white;
-
+.review .box-container .box {
     border: var(--border);
     text-align: center;
     padding: 3rem 2rem;
-    outline: 2px dotted white;
 }
 
 .review .box-container .box p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--white);
-    padding: 2.2rem 0;
-    line-height: 2rem;
-    outline: 2px dotted white;
+    padding: 2rem 0;
+    line-height: normal;
+    font-weight: lighter;
 }
 
 .review .box-container .box .user {
-    height: 200px;
-    width: 200px;
+    height: 8rem;
+    width: 8rem;
     border-radius: 50%;
-    outline: 2px dotted white;  
 }
 
-.stars img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+iframe {
+    height: 450px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
