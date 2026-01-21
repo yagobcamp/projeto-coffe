@@ -19,6 +19,7 @@
     text-align: left;
     transition: 0.1s linear;
     font-family: "Playfair Display", serif;
+}
 
 body {
     padding-top: 80px;
@@ -273,7 +274,6 @@ iframe {
 
   .navbar a {
   }
-
   .home-container section,
   .about .row {
     flex-direction: column;
