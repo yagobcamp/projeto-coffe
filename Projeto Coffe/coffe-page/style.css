@@ -19,8 +19,6 @@
     text-align: left;
     transition: 0.1s linear;
     font-family: "Playfair Display", serif;
-    outline: 3px solid red;
-}
 
 body {
     padding-top: 80px;
